@@ -3,7 +3,7 @@
 
 //DHT Configurations
 #include "DHT.h"
-#define DHTPIN 3 
+#define DHTPIN 13
 #define DHTTYPE DHT11   
 
 DHT dht(DHTPIN, DHTTYPE);
@@ -33,14 +33,14 @@ const int ledPin = 4;
 
 
 //Relays---------------------------------->
-const int light1 = 23; //D23
-const int light2 = 22; //D22
-const int light3 = 21; //D21
+const int light1 = 18; //D23//23
+const int light2 = 5; //D22//22
+const int light3 = 15; //D21//22
 const int fan1 = 19; //D19
-const int fan2 = 18; //D18
-const int fan3 =  5; //D5
-const int motors = 4; //D4
-const int growLight = 15;//D2
+const int fan2 = 4; //D18//18
+const int fan3 =  21; //D5
+const int motors = 23; //D4 //4
+const int growLight = 22;//D2//15
 //---------------------------------------->
 
 
