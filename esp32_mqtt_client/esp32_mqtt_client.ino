@@ -10,8 +10,14 @@ DHT dht(DHTPIN, DHTTYPE);
 
 
 // Replace the next variables with your SSID/Password combination
+//const char* ssid = "Lucky3241";
+//const char* password =  "pushpa6633";
+
 const char* ssid = "Dialog 4G";
-const char* password = "NRHAQL1RNJ6";
+const char* password =  "NRHAQL1RNJ6";
+
+
+
 
 // Add your MQTT Broker IP address, example:
 //const char* mqtt_server = "192.168.1.144";
@@ -321,6 +327,18 @@ void reconnect() {
     // Attempt to connect
     if (client.connect("ESP8266Client")) {
       Serial.println("connected");
+       digitalWrite(LED_BUILTIN,HIGH);
+        delay(50);
+        digitalWrite(LED_BUILTIN,LOW);
+        delay(50);
+        digitalWrite(LED_BUILTIN,HIGH);
+        delay(50);
+        digitalWrite(LED_BUILTIN,LOW);
+        delay(50);
+         digitalWrite(LED_BUILTIN,HIGH);
+        delay(50);
+        digitalWrite(LED_BUILTIN,LOW);
+        delay(50);
       // Subscribe
       //      client.subscribe("GrowBox");
       client.subscribe("GrowBox/Lights/Light01");
